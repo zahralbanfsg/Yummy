@@ -47,7 +47,6 @@ async function getMealsByName() {
         let responce = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${countName}`);
         let data = await responce.json();
         let countryMeals = data.meals;
-        console.log(countryMeals)
         let tagsWord;
         let cartona;
         if (!countryMeals[0].strTags == null) {
@@ -694,7 +693,6 @@ function passValidate() {
     var regex = /^(?=.*\d)(?=.*[a-z])[0-9a-zA-Z]{8,}$/;
     if (regex.test(userPass.value) == true) {
         $("#invalidPass").addClass("d-none");
-        console.log("true")
         return true;
     } else {
         $("#invalidPass").removeClass("d-none");
