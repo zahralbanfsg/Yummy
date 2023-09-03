@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./CSS/animate.css-main/animate.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+</head>
+
+<body class="overflow-hidden">
+
+    <div class="loadingPage d-flex justify-content-center align-items-center">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="position-fixed top-0 bottom-0 d-flex justify-content-start z-3 " id="sideBar">
+            <div class="p-4 sideBarWords bg-black d-flex flex-column justify-content-between" id="innerSideBar">
+                <ul class="mb-0 ps-0 words">
+                    <li class="search">Search</li>
+                    <li class="categories">Categories</li>
+                    <li class="area">Area</li>
+                    <li class="ingredients">Ingredients</li>
+                    <li class="contact-us">Contact Us</li>
+                </ul>
+                <div class="socialMedia">
+                    <ul class=" ps-0 mb-0 fs-5 text-white d-flex align-content-center justify-content-start">
+                        <li class="me-2"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="me-2"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="me-2"><i class="fa-solid fa-globe"></i></li>
+                    </ul>
+                    <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="bg-white sideBarIcons py-4 px-2 d-flex justify-content-between flex-column text-center">
+                <a href="./index.html"><img src="./images/logo.png" alt="log" class="w-100"></a>
+                <i class="fa-solid open-close-icon fa-x d-none" id="togglrIconClose"></i>
+                <i class="fa-solid fa-bars" id="togglrIconOpen"></i>
+                <div>
+                    <ul class="ps-0 mb-0 text-center">
+                        <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-share-nodes"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container py-5 ps-5">
+        <div class="row g-3 justify-content-between" id="mealBoxOfStorage">
+
+        </div>
+    </section>
+
+    <script src="./JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
